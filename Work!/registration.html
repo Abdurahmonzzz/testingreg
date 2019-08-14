@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration</title>
     <link rel="stylesheet" href="registration.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
 </head>
 <body>
     <section class="block">
@@ -18,29 +20,26 @@
             </div>
         </div>
         <form class="form">
-                <div class="content_form rev">
-                    <!-- <label for="user_name" class="user_name" id="user">Name </label> -->
-                    <input type="text" name="name" value autocomplete="name" required maxlength="32" tabindex="1" class="form_input" placeholder="Name">
+                <div class="form_content rev wrapper">
+                    <input class="form_input" type="text" name="name" value autocomplete="name" required maxlength="32" tabindex="1" placeholder="Name">
+                    <!-- <label><span class="placeholder">Name</span></label> -->
                 </div>
-                <div class="content_form">
-                   <!-- <label for="user_name" class="user_name">Email</label> -->
-                    <input type="email" name="email" value autocomplete="email" required maxlength="128" tabindex="2" class="form_input" placeholder="E-mail">
+                <div class="form_content wrapper">
+                    <input class="form_input" type="email" name="email" value autocomplete="email" required maxlength="128" tabindex="2" placeholder="E-mail">
+                    <!-- <label><span class="placeholder">E-mail</span></label> -->
                 </div>
-                <div class="content_form">
-                   <!-- <label for="user_name" class="user_name">Password</label> -->
-                    <input type="password" name="Password" value autocomplete="current-password" required maxlength="72" tabindex="1" class="form_input" placeholder="Password">
+                <div class="form_content wrapper">
+                    <input class="form_input" type="password" name="Password" value autocomplete="current-password" required maxlength="72" tabindex="1" placeholder="Password">
+                    <!-- <label><span class="placeholder">Password</span></label> -->
                 </div>
                 <div>
                     <!--Button Continue-->
                     <button class="content_button button_next" format="primary" type="submit" disabled="" tabindex="5">
                         <span class="sc-bxivhb jrbrfM">Continue</span>
-                        
                     </button>
                 </div>
         </form>
     </section>
-
-    <script src="jquery-3.4.1.min.js"></script>
     <script src="registration.js"></script>
 </body>
 </html>
